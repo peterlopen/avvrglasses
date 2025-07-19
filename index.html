@@ -2,32 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AVVR glasses</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Glasses Hub</title>
   <style>
-    /* Full screen setup with gradient background */
-    body, html {
-      height: 100%;
+    body {
+      font-family: sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
-      color: white;
+      padding: 0;
+      scroll-behavior: smooth;
+      background: #f9f9f9;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 2rem;
       text-align: center;
     }
-    /* Big text styling */
-    h1 {
-      font-size: 8vw; /* Responsive large size */
-      font-weight: 900;
-      letter-spacing: 0.1em;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-      margin: 0;
+
+    .section {
+      padding: 3rem 2rem;
+      border-bottom: 1px solid #ddd;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section h2 {
+      margin-top: 0;
+    }
+
+    .section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 1rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>AVVR glasses</h1>
+  <header>
+    <h1>Explore the Future: AR, VR & Smart Glasses</h1>
+    <p>Discover the best in cutting-edge wearable tech</p>
+  </header>
+
+  <div class="section" id="meta">
+    <h2>Meta Quest 3</h2>
+    <img src="https://store.meta.com/_next/image?url=%2F_Assets%2FMeta-Quest-3%2Fhero%2Fmeta-quest-3-3qtr-left.png&w=3840&q=100" alt="Meta Quest 3">
+    <p>The Meta Quest 3 is Meta’s latest mixed-reality headset, offering a powerful experience for VR gaming, work, and more.</p>
+    <a class="btn" href="https://www.meta.com/quest/quest-3/" target="_blank">Shop Meta Quest 3</a>
+  </div>
+
+  <div class="section" id="apple">
+    <h2>Apple Vision Pro</h2>
+    <img src="https://www.apple.com/v/apple-vision-pro/a/images/overview/hero/hero_base__e9v1jz4x74y6_large.jpg" alt="Apple Vision Pro">
+    <p>Apple’s Vision Pro blends digital content with your physical space, delivering the ultimate spatial computing experience.</p>
+    <a class="btn" href="https://www.apple.com/apple-vision-pro/" target="_blank">Shop Apple Vision Pro</a>
+  </div>
+
+  <div class="section" id="xreal">
+    <h2>XREAL Air 2</h2>
+    <img src="https://www.xreal.com/static/images/air-2/air2-hero-1.jpg" alt="XREAL Air 2">
+    <p>XREAL (formerly Nreal) delivers stylish AR glasses designed for entertainment and productivity on the go.</p>
+    <a class="btn" href="https://www.xreal.com/" target="_blank">Shop XREAL Glasses</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Smart Glasses Hub — All rights reserved.
+  </footer>
 </body>
 </html>

@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <defs>
+    <!-- Background gradient: deep space feel -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0d1b3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a0a2e;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- VR text gradient: electric neon -->
+    <linearGradient id="vrGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff00cc" />
+      <stop offset="35%" style="stop-color:#ff6600" />
+      <stop offset="70%" style="stop-color:#ffcc00" />
+      <stop offset="100%" style="stop-color:#00ffcc" />
+    </linearGradient>
+
+    <!-- Audio gradient: cool cyan-blue -->
+    <linearGradient id="audioGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff" />
+      <stop offset="100%" style="stop-color:#0088ff" />
+    </linearGradient>
+
+    <!-- Video gradient: warm magenta-orange -->
+    <linearGradient id="videoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff0080" />
+      <stop offset="100%" style="stop-color:#ff6600" />
+    </linearGradient>
+
+    <!-- Glow filter for VR -->
+    <filter id="vrGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Subtle glow for small text -->
+    <filter id="smallGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Equals sign gradient -->
+    <linearGradient id="eqGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#aa00ff" />
+      <stop offset="100%" style="stop-color:#ff00cc" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="300" fill="url(#bgGrad)" rx="18" />
+
+  <!-- Decorative grid lines (subtle) -->
+  <g opacity="0.07" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="60" x2="600" y2="60" />
+    <line x1="0" y1="120" x2="600" y2="120" />
+    <line x1="0" y1="180" x2="600" y2="180" />
+    <line x1="0" y1="240" x2="600" y2="240" />
+    <line x1="100" y1="0" x2="100" y2="300" />
+    <line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="300" y1="0" x2="300" y2="300" />
+    <line x1="400" y1="0" x2="400" y2="300" />
+    <line x1="500" y1="0" x2="500" y2="300" />
+  </g>
+
+  <!-- Decorative circles (lens motif) -->
+  <circle cx="120" cy="150" r="80" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.15" />
+  <circle cx="120" cy="150" r="55" fill="none" stroke="#00d4ff" stroke-width="0.5" opacity="0.1" />
+  <circle cx="480" cy="150" r="80" fill="none" stroke="#ff0080" stroke-width="1" opacity="0.15" />
+  <circle cx="480" cy="150" r="55" fill="none" stroke="#ff0080" stroke-width="0.5" opacity="0.1" />
+
+  <!-- "Audio" small text -->
+  <text
+    x="110"
+    y="118"
+    font-family="'Arial Black', 'Impact', sans-serif"
+    font-size="28"
+    font-weight="900"
+    letter-spacing="4"
+    text-anchor="middle"
+    fill="url(#audioGrad)"
+    filter="url(#smallGlow)"
+  >AUDIO</text>
+
+  <!-- "+" operator -->
+  <text
+    x="210"
+    y="118"
+    font-family="'Arial Black', 'Impact', sans-serif"
+    font-size="32"
+    font-weight="900"
+    text-anchor="middle"
+    fill="#ffffff"
+    opacity="0.7"
+  >+</text>
+
+  <!-- "Video" small text -->
+  <text
+    x="310"
+    y="118"
+    font-family="'Arial Black', 'Impact', sans-serif"
+    font-size="28"
+    font-weight="900"
+    letter-spacing="4"
+    text-anchor="middle"
+    fill="url(#videoGrad)"
+    filter="url(#smallGlow)"
+  >VIDEO</text>
+
+  <!-- "=" operator -->
+  <text
+    x="370"
+    y="185"
+    font-family="'Arial Black', 'Impact', sans-serif"
+    font-size="50"
+    font-weight="900"
+    text-anchor="middle"
+    fill="url(#eqGrad)"
+    opacity="0.9"
+  >=</text>
+
+  <!-- "VR" big text — the hero -->
+  <text
+    x="510"
+    y="210"
+    font-family="'Arial Black', 'Impact', sans-serif"
+    font-size="140"
+    font-weight="900"
+    letter-spacing="-4"
+    text-anchor="middle"
+    fill="url(#vrGrad)"
+    filter="url(#vrGlow)"
+  >VR</text>
+
+  <!-- Thin accent line under AUDIO and VIDEO -->
+  <line x1="60" y1="125" x2="160" y2="125" stroke="url(#audioGrad)" stroke-width="2" opacity="0.6" />
+  <line x1="260" y1="125" x2="360" y2="125" stroke="url(#videoGrad)" stroke-width="2" opacity="0.6" />
+</svg>

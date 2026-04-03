@@ -103,32 +103,40 @@
 
     .tabs {
       display: flex;
-      background: #fff;
-      border-bottom: 2px solid #ddd;
       max-width: 800px;
       margin: 0 auto;
+      gap: 4px;
+      padding: 0.6rem 0.6rem 0;
+      background: #1a1a2e;
     }
 
     .tab-button {
       flex: 1;
-      padding: 1rem 2rem;
-      background: #f8f9fa;
+      padding: 0.75rem 1.5rem;
+      background: #2a2a4a;
       border: none;
       cursor: pointer;
-      font-size: 1rem;
-      font-weight: 500;
-      transition: all 0.3s;
+      font-family: 'Arial Black', 'Impact', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #8888bb;
+      border-radius: 6px 6px 0 0;
+      transition: all 0.25s;
       border-bottom: 3px solid transparent;
     }
 
     .tab-button:hover {
-      background: #e9ecef;
+      background: #33336a;
+      color: #00d4ff;
     }
 
     .tab-button.active {
-      background: #fff;
-      border-bottom-color: #007bff;
-      color: #007bff;
+      background: #f9f9f9;
+      color: #0a0a1a;
+      border-bottom: 3px solid #00d4ff;
+      box-shadow: 0 -2px 8px rgba(0, 212, 255, 0.25);
     }
 
     .tab-content {

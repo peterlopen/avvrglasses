@@ -138,6 +138,45 @@
     .tab-content.active {
       display: block;
     }
+
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .specs-table th {
+      background: #f0f4ff;
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      width: 40%;
+      color: #444;
+      font-weight: 600;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .specs-table td {
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid #eee;
+      color: #333;
+    }
+
+    .specs-table tr:last-child th,
+    .specs-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .specs-table caption {
+      text-align: left;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #007bff;
+      margin-bottom: 0.4rem;
+      caption-side: top;
+    }
   </style>
 </head>
 <body>
@@ -155,21 +194,70 @@
     <div class="section" id="meta">
       <h2>Ray-Ban Meta Smart Glasses</h2>
       <img src="meta.png" alt="Ray-Ban Meta Smart Glasses">
-      <p>The Ray-Ban Meta smart glasses combine classic Ray-Ban style with Meta's advanced camera and audio technology. Capture moments hands-free, stream video, listen to music, and take calls — all without taking out your phone.</p>
+      <p>The Ray-Ban Meta smart glasses (2nd generation, 2023) are a collaboration between Meta and EssilorLuxottica. They look and feel like regular Ray-Bans — available in Wayfarer, Headliner, and other classic frames — while packing a 12 MP ultrawide camera, five-mic array for spatial audio capture, and open-ear speakers. The 2024 update added a live-streaming feature to Instagram and Facebook, and Meta AI voice assistant support, letting you ask questions about what you're seeing hands-free. Battery lasts around 4 hours of active use, with the charging case extending that to roughly 32 hours total.</p>
+      <table class="specs-table">
+        <caption>Key Specifications</caption>
+        <tbody>
+          <tr><th>Camera</th><td>12 MP ultrawide, f/2.2, 1080p video @ 30 fps</td></tr>
+          <tr><th>Audio</th><td>Open-ear speakers, 5-mic array with beamforming</td></tr>
+          <tr><th>Connectivity</th><td>Bluetooth 5.3, Wi-Fi (for live streaming)</td></tr>
+          <tr><th>Battery life</th><td>~4 hrs active use; ~32 hrs with charging case</td></tr>
+          <tr><th>Water resistance</th><td>IPX4 (splash resistant)</td></tr>
+          <tr><th>Weight</th><td>~49 g (frame dependent)</td></tr>
+          <tr><th>Companion app</th><td>Meta View (iOS & Android)</td></tr>
+          <tr><th>AI features</th><td>Meta AI voice assistant, live view context</td></tr>
+          <tr><th>Price</th><td>From $299</td></tr>
+        </tbody>
+      </table>
+      <br>
       <a class="btn" href="https://www.meta.com/smart-glasses/" target="_blank">Shop Ray-Ban Meta Glasses</a>
     </div>
 
     <div class="section" id="xreal">
       <h2>XREAL Air 2</h2>
       <img src="xreal.png" alt="XREAL Air 2">
-      <p>XREAL (formerly Nreal) delivers stylish AR glasses designed for entertainment and productivity on the go.</p>
+      <p>The XREAL Air 2 (released October 2023) are AR glasses focused on delivering a large personal display experience. They project the equivalent of a 330-inch screen at 4 meters, making them well-suited for watching video, working with a virtual monitor, or gaming on the go. Compared to the original Air, the Air 2 improves brightness to 500 nits, reduces the electrochromic lens tint response time, and cuts weight slightly. They connect via USB-C to phones, laptops, and consoles — no battery or Wi-Fi required. The XREAL Beam accessory adds a standalone 3DoF spatial computing mode without needing a host device.</p>
+      <table class="specs-table">
+        <caption>Key Specifications</caption>
+        <tbody>
+          <tr><th>Display</th><td>Micro-OLED, 1920×1080 per eye, 120 Hz</td></tr>
+          <tr><th>Brightness</th><td>500 nits</td></tr>
+          <tr><th>Field of view</th><td>46°</td></tr>
+          <tr><th>Virtual screen size</th><td>Equivalent to 330" at 4 m</td></tr>
+          <tr><th>Electrochromic lens</th><td>3-level adjustable tint</td></tr>
+          <tr><th>Connection</th><td>USB-C (DisplayPort Alt Mode)</td></tr>
+          <tr><th>Compatibility</th><td>Android, PC, Mac, Steam Deck, consoles (via adapter)</td></tr>
+          <tr><th>Weight</th><td>72 g</td></tr>
+          <tr><th>Audio</th><td>Built-in speakers, 3.5 mm jack</td></tr>
+          <tr><th>Price</th><td>From $349</td></tr>
+        </tbody>
+      </table>
+      <br>
       <a class="btn" href="https://www.xreal.com/" target="_blank">Shop XREAL Glasses</a>
     </div>
 
     <div class="section" id="even-g1">
       <h2>Even Realities G1</h2>
       <img src="Even_G1_Glasses.jpg" alt="Even Realities G1">
-      <p>Even G1 is the first eyewear designed to seamlessly blend stunning aesthetics with digital functionality. Features a built-in display only you can see, microphones, touch sensors, and AI support for undisturbed, real-life experiences while staying connected.</p>
+      <p>The Even Realities G1 are prescription-compatible smart glasses with a discreet Micro-LED waveguide display visible only to the wearer. Unlike AR headsets, the G1 prioritises all-day wearability — they look like ordinary glasses and weigh under 40 g. The green monochrome HUD shows notifications, navigation, translations, AI responses, and a teleprompter, projected at roughly 2 meters in front of you to reduce eye strain. The companion app (iOS & Android) handles AI queries via Even AI, and the glasses support BLE 5.2 for a stable phone connection. Battery lasts up to 1.5 days on a charge. Note: the G1 has been succeeded by the Even G2, but remains available.</p>
+      <table class="specs-table">
+        <caption>Key Specifications</caption>
+        <tbody>
+          <tr><th>Display</th><td>Micro-LED waveguide, green monochrome</td></tr>
+          <tr><th>Resolution</th><td>640 × 200 per eye</td></tr>
+          <tr><th>Brightness</th><td>1000 nits</td></tr>
+          <tr><th>Field of view</th><td>25°</td></tr>
+          <tr><th>Refresh rate</th><td>20 Hz</td></tr>
+          <tr><th>Passthrough</th><td>98% (near-clear lenses)</td></tr>
+          <tr><th>Connectivity</th><td>Bluetooth BLE 5.2</td></tr>
+          <tr><th>Battery life</th><td>Up to 1.5 days; ~2–3 hrs to charge</td></tr>
+          <tr><th>Water resistance</th><td>Splash & light rain resistant</td></tr>
+          <tr><th>Weight</th><td>~38 g</td></tr>
+          <tr><th>Prescription lenses</th><td>Yes (MR™ Series by Mitsui Chemicals)</td></tr>
+          <tr><th>Price</th><td>From $269</td></tr>
+        </tbody>
+      </table>
+      <br>
       <a class="btn" href="https://www.evenrealities.com/" target="_blank">Shop Even Realities G1</a>
     </div>
   </div>
